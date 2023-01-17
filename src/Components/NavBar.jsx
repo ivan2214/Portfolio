@@ -18,7 +18,7 @@ const NavBar = () => {
   ]
   return (
     <nav className='flex w-full gap-10 items-center justify-between px-10 py-3'>
-      logo
+      <a href='/'>logo</a>
       <section className='flex w-full gap-10 items-center justify-end'>
         <ul className='flex items-center gap-5 justify-center'>
           {links.map((l) => (
