@@ -1,18 +1,8 @@
 import React, { useEffect, useState } from 'react'
-
+import { BsFillMoonStarsFill } from 'react-icons/bs'
 export const DarkMode = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
   const element = document.documentElement
-  const options = [
-    {
-      icon: 'sunny',
-      text: 'light',
-    },
-    {
-      icon: 'moon',
-      text: 'dark',
-    },
-  ]
 
   useEffect(() => {
     switch (theme) {
@@ -32,20 +22,13 @@ export const DarkMode = () => {
   }, [theme])
 
   return (
-    <div>
-      {options.map((e) => {
-        return (
-          <button
-            onClick={() => setTheme(e.text)}
-            key={e.text}
-            className={`w-8 h-8 leading-9 text-xl rounded-full m-1 transition-all duration-500 ${
-              theme === e.text ? 'text-sky-600' : 'text-gray-900 dark:text-white'
-            }`}
-          >
-            <ion-icon name={e.icon}></ion-icon>
-          </button>
-        )
-      })}
-    </div>
+    <button
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className={`transition-all duration-500  ${
+        theme === 'dark' ? 'text-white' : 'text-gray-700'
+      }`}
+    >
+      <BsFillMoonStarsFill size={20} />
+    </button>
   )
 }

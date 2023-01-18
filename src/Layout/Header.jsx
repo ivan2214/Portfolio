@@ -3,7 +3,7 @@ import NavBar from '@/Components/NavBar'
 
 const Header = () => {
   return (
-    <header className='w-full bg-slate-500 dark:bg-slate-700 flex flex-row justify-end shadow-lg'>
+    <header className='max-w-screen-2xl flex w-full flex-row justify-end bg-gray-200 shadow-2xl dark:bg-slate-800'>
       <NavBar />
     </header>
   )

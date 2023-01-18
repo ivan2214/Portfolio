@@ -6,7 +6,7 @@ import Projects from '@/Layout/Projects'
 
 function App() {
   return (
-    <main className='bg-white transition-all duration-500 ease-in   dark:bg-slate-800 w-full min-h-screen flex items-center flex-col'>
+    <main className='flex min-h-screen w-full  flex-col  items-center overflow-hidden bg-white transition-all duration-500 dark:bg-slate-800'>
       <Header />
       <Hero />
       <About />

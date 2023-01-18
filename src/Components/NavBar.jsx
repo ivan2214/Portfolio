@@ -1,5 +1,7 @@
 import React from 'react'
 import { DarkMode } from '@/Utils/DarkMode'
+import { FiCode } from 'react-icons/fi'
+import cv from '@/Assets/Bongiovanni Ivan Cv.pdf'
 
 const NavBar = () => {
   const links = [
@@ -17,17 +19,23 @@ const NavBar = () => {
     },
   ]
   return (
-    <nav className='flex w-full gap-10 items-center justify-between px-10 py-3'>
-      <a href='/'>logo</a>
-      <section className='flex w-full gap-10 items-center justify-end'>
-        <ul className='flex items-center gap-5 justify-center'>
-          {links.map((l) => (
-            <li className={'text-gray-200 hover:text-gray-300 text-lg'}>
-              <a href={l.href}>{l.tittle}</a>
-            </li>
-          ))}
+    <nav className='flex  w-full  items-center justify-between gap-10 px-4 py-3'>
+      <a className='w-fit dark:text-white' href='/'>
+        <FiCode size={30} />
+      </a>
+      <section className='flex items-center justify-end gap-1'>
+        <ul className='flex w-full flex-row items-center justify-center gap-5   lg:flex-row'>
+          <li
+            className={
+              'text ml-8 rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white'
+            }
+          >
+            <a href={cv} download='CV IvanBongiovanni' class='button'>
+              Curriculum
+            </a>
+          </li>
+          <DarkMode />
         </ul>
-        <DarkMode />
       </section>
     </nav>
   )

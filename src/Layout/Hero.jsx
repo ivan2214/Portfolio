@@ -1,17 +1,15 @@
 import React from 'react'
-import { FaArrowDown } from 'react-icons/fa'
+
+import cartonfy from '@/Assets/Cartoonify.png'
+import Description from '@/Components/Description'
 
 const Hero = () => {
   return (
-    <section className='h-[90vh] dark:bg-slate-900 flex w-full justify-center flex-col items-center gap-14'>
-      <div className='flex items-center flex-col gap-5 justify-center'>
-        <h1 className='text-2xl text-white'>Ivan Bongiovani</h1>
-        <p className='text-lg text-white'>Full Stack Developer</p>
-        <span className='text-md font-light text-gray-400'>Especializado En Stack PERN & MERN</span>
+    <section className=' flex h-full min-h-screen w-full flex-col items-center  justify-center gap-10 dark:bg-slate-900 lg:flex-row  lg:justify-between'>
+      <Description />
+      <div className='relative mx-auto  h-24 w-24 overflow-hidden rounded-full bg-gradient-to-b from-teal-500 md:h-24 md:w-24'>
+        <img src={cartonfy} className='fill-current object-cover' />
       </div>
-      <a href='#about'>
-        <FaArrowDown className='text-white w-7 h-7' />
-      </a>
     </section>
   )
 }
