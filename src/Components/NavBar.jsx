@@ -19,7 +19,7 @@ const NavBar = () => {
     },
   ]
   return (
-    <nav className='flex  w-full  items-center justify-between gap-10 px-4 py-3'>
+    <nav className='flex  items-center  justify-between gap-10 px-4 py-3 w-full'>
       <a className='w-fit dark:text-white' href='/'>
         <FiCode size={30} />
       </a>
