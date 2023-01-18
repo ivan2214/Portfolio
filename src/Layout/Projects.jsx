@@ -13,7 +13,7 @@ const Projects = () => {
   const { Testimonials } = content
   const [activeIndex, setActiveIndex] = useState(0)
   return (
-    <section className='mt-16 min-h-screen w-full' id='projects'>
+    <section className='mt-16 h-full w-full' id='projects'>
       <h2 className='px-10 text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
         Proyectos
       </h2>
