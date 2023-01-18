@@ -4,60 +4,56 @@ import { BsServer, BsFillPaletteFill } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <section>
-      <div>
-        <h3 className='py-1 text-3xl dark:text-white '>Services I offer</h3>
-        <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-          Since the beginning of my journey as a freelance designer and developer, I've done remote
-          work for
-          <span className='text-teal-500'> agencies </span>
-          consulted for <span className='text-teal-500'>startups </span>
-          and collaborated with talanted people to create digital products for both business and
-          consumer use.
+    <section className='flex flex-col items-center justify-center gap-20  '>
+      <section className='flex flex-col items-start justify-center text-left '>
+        <h2 className='text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
+          Servicios que ofrezco
+        </h2>
+        <p className='text-md py-2 text-left  leading-8 text-gray-800 dark:text-gray-200'>
+          Como <span className='text-teal-500'> desarrollador </span>, he aplicado mis habilidades
+          en proyectos personales y colaboraciones con un equipo talentoso para crear aplicaciones
+          web de alto rendimiento para uso comercial y de consumo. Ofrezco servicios especializados
+          en desarrollo
+          <span className='text-teal-500'> FrontEnd </span> y
+          <span className='text-teal-500'> BackEnd </span>, con el objetivo de brindar soluciones
+          innovadoras y eficientes a mis clientes.
         </p>
         <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
           I offer from a wide range of services, including brand design, programming and teaching.
         </p>
-      </div>
-      <div className='gap-10 lg:flex'>
-        <div className='my-10 flex-1 rounded-xl p-10 text-center  shadow-lg dark:bg-white'>
-          <FaServer size={30} className='m-auto' />
-          <h3 className='pt-8 pb-2 text-lg font-medium  '>Beautiful Designs</h3>
+      </section>
+      <section className='grid  grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10  '>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900'>
+          <BsFillPaletteFill className='mx-auto h-10 w-10' />
+
+          <h3 className='pt-8 pb-2 text-lg font-medium '>FrontEnd</h3>
           <p className='py-2'>
-            Creating elegant designs suited for your needs following core design theory.
+            Como especialista en desarrollo FrontEnd, me esfuerzo por crear interfaces de usuario
+            atractivas y fáciles de usar que se adapten a las necesidades específicas de cada
+            proyecto.
           </p>
-          <h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
-          <p className='py-1 text-gray-800'>Photoshop</p>
-          <p className='py-1 text-gray-800'>Illustrator</p>
-          <p className='py-1 text-gray-800'>Figma</p>
-          <p className='py-1 text-gray-800'>Indesign</p>
-        </div>
-        <div className='my-10 flex-1 rounded-xl p-10 text-center shadow-lg dark:bg-white'>
-          <BsServer size={30} className='m-auto' />
-          <h3 className='pt-8 pb-2 text-lg font-medium '>Codifica el proyecto de tus sueños</h3>
+        </article>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900'>
+          <FaServer className='mx-auto h-10 w-10' />
+          <h3 className='pt-8 pb-2 text-lg font-medium '>BackEnd</h3>
           <p className='py-2'>
-          ¿Tienes una idea para tu próximo gran sitio web? Hagámoslo realidad.
+            Como desarrollador back-end, puedo crear APIs REST y GraphQL utilizando Express y
+            Apollo. Me especializo en crear soluciones robustas y escalables, asegurando la
+            seguridad y estabilidad de las aplicaciones. Utilizo las últimas tecnologías y
+            herramientas para ofrecer soluciones de alta calidad.
           </p>
-          <h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
-          <p className='py-1 text-gray-800'>Photoshop</p>
-          <p className='py-1 text-gray-800'>Illustrator</p>
-          <p className='py-1 text-gray-800'>Figma</p>
-          <p className='py-1 text-gray-800'>Indesign</p>
-        </div>
-        <div className='my-10 flex-1 rounded-xl p-10 text-center shadow-lg dark:bg-white'>
-          <BsFillPaletteFill size={30} className='m-auto' />
-          <h3 className='pt-8 pb-2 text-lg font-medium '>Consulting</h3>
+        </article>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900'>
+          <BsServer className='mx-auto h-10 w-10' />
+          <h3 className='pt-8 pb-2 text-lg font-medium '>Base de Datos</h3>
           <p className='py-2'>
-            Are you interested in feedback for your current project? I can give you tips and tricks
-            to level it up.
+            Como desarrollador back-end con experiencia en el uso de Mongoose y Sequelize, puedo
+            conectar el servidor Express con una base de datos de manera eficiente y segura. Utilizo
+            Mongoose con MongoDB, para definir esquemas de datos. Sequelize, para bases de datos
+            relacionales, creacion de tablas relacciones y modelos
           </p>
-          <h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
-          <p className='py-1 text-gray-800'>Photoshop</p>
-          <p className='py-1 text-gray-800'>Illustrator</p>
-          <p className='py-1 text-gray-800'>Figma</p>
-          <p className='py-1 text-gray-800'>Indesign</p>
-        </div>
-      </div>
+        </article>
+      </section>
     </section>
   )
 }

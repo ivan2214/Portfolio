@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { SiGmail } from 'react-icons/si'
 
 const Description = () => {
   return (
@@ -15,19 +16,22 @@ const Description = () => {
       </p>
       <div className='flex items-center justify-center gap-16  '>
         <a
-          href=''
+          href='mailto:bongiovanniivan12@gmail.com?Subject=Me%20contacto%20por%20medio%20tu%20portafolio%20y%20quisiera%20poder%20establecer%20una%20charla%20contigo'
+          target='_blank'
           className='text-4xl text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
         >
-          <AiFillTwitterCircle />
+          <SiGmail />
         </a>
         <a
-          href=''
+          href='https://github.com/ivan2214'
+          target='_blank'
           className='text-4xl text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
         >
           <AiFillGithub />
         </a>
         <a
-          href=''
+          href='https://www.linkedin.com/in/bongiovanni-ivan45'
+          target='_blank'
           className='text-4xl text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
         >
           <AiFillLinkedin />
