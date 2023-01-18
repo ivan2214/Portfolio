@@ -4,7 +4,7 @@ import { BsServer, BsFillPaletteFill } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-20  '>
+    <section className='flex flex-col px-10 items-center justify-center gap-20  '>
       <section className='flex flex-col items-start justify-center text-left '>
         <h2 className='text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
           Servicios que ofrezco
