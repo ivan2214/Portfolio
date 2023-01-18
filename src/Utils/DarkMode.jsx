@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 export const DarkMode = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark')
   const element = document.documentElement
 
   useEffect(() => {

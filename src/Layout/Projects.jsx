@@ -33,19 +33,19 @@ const Projects = () => {
           modules={[Pagination]}
           className='w-full '
         >
-          {Testimonials.testimonials_content.map((content, i) => (
+          {Testimonials?.testimonials_content?.map((content, i) => (
             <SwiperSlide key={i}>
               <div
                 className={`flex h-full w-full flex-col items-center justify-center gap-6 overflow-hidden
-              rounded-2xl border-[1.5px] border-gray-100 bg-gray-300 text-gray-900 duration-500 dark:bg-gray-200
-               dark:text-gray-900 md:flex-row lg:p-8
-                ${activeIndex !== i && 'scale-75 blur-sm'}`}
+              rounded-2xl  bg-teal-700 text-gray-200 duration-500 dark:bg-gray-800
+               dark:text-gray-300 md:flex-row lg:p-8
+                ${activeIndex !== i && 'translate-y-16 scale-75 blur-sm'}`}
               >
                 <div className='flex h-full flex-col  items-center justify-center gap-10 '>
                   <img
                     src={content.img}
                     alt='...'
-                    className='max-w-xs rounded-2xl object-cover '
+                    className='aspect-[16/13] w-full object-cover md:aspect-[16/18] md:cursor-pointer md:rounded-2xl lg:aspect-[16/6] 2xl:max-h-[500px]'
                   />
                   <div className='flex flex-row items-center justify-center gap-5'>
                     <a
@@ -53,14 +53,14 @@ const Projects = () => {
                       target='_blank'
                       className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
                     >
-                      <AiFillGithub className="h-7 w-7" />
+                      <AiFillGithub className='h-7 w-7' />
                     </a>
                     <a
                       href='https://github.com/ivan2214'
                       target='_blank'
                       className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
                     >
-                      <TfiWorld className="h-7 w-7" />
+                      <TfiWorld className='h-7 w-7' />
                     </a>
                   </div>
                 </div>

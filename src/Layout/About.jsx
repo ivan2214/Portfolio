@@ -4,7 +4,7 @@ import { BsServer, BsFillPaletteFill } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <section className='flex flex-col items-center justify-center gap-20 px-10  ' id='about'  >
+    <section className='flex flex-col items-center justify-center gap-20 px-10  ' id='about'>
       <section className='flex flex-col items-start justify-center text-left '>
         <h2 className='text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
           Servicios que ofrezco
@@ -20,7 +20,7 @@ const About = () => {
         </p>
       </section>
       <section className='grid  grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10  '>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900'>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200'>
           <BsFillPaletteFill className='mx-auto h-10 w-10' />
 
           <h3 className='pt-8 pb-2 text-lg font-medium '>FrontEnd</h3>
@@ -30,7 +30,7 @@ const About = () => {
             proyecto.
           </p>
         </article>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900 lg:mt-24'>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200 lg:mt-24'>
           <FaServer className='mx-auto h-10 w-10' />
           <h3 className='pt-8 pb-2 text-lg font-medium '>BackEnd</h3>
           <p className='py-2'>
@@ -40,7 +40,7 @@ const About = () => {
             herramientas para ofrecer soluciones de alta calidad.
           </p>
         </article>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900'>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200'>
           <BsServer className='mx-auto h-10 w-10' />
           <h3 className='pt-8 pb-2 text-lg font-medium '>Base de Datos</h3>
           <p className='py-2'>
