@@ -19,7 +19,7 @@ const NavBar = () => {
     },
   ]
   return (
-    <nav className='flex  items-center  justify-between gap-10 px-4 py-3 w-full'>
+    <nav className='flex  w-full  items-center justify-between gap-10 px-4 py-3'>
       <a className='w-fit dark:text-white' href='/'>
         <FiCode size={30} />
       </a>
@@ -30,7 +30,7 @@ const NavBar = () => {
               'text ml-8 rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white'
             }
           >
-            <a href={cv} download='CV IvanBongiovanni' class='button'>
+            <a href={cv} download='CV IvanBongiovanni'>
               Curriculum
             </a>
           </li>

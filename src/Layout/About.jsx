@@ -9,7 +9,7 @@ const About = () => {
         <h2 className='text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
           Servicios que ofrezco
         </h2>
-        <p className='text-md py-2 text-left  leading-8 text-gray-800 dark:text-gray-200'>
+        <p className='text-md py-2 text-left leading-8  text-gray-800 dark:text-gray-200 lg:pr-64'>
           Como <span className='text-teal-500'> desarrollador </span>, he aplicado mis habilidades
           en proyectos personales y colaboraciones con un equipo talentoso para crear aplicaciones
           web de alto rendimiento para uso comercial y de consumo. Ofrezco servicios especializados
@@ -33,7 +33,7 @@ const About = () => {
             proyecto.
           </p>
         </article>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900'>
+        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-200 dark:text-gray-900 lg:mt-24'>
           <FaServer className='mx-auto h-10 w-10' />
           <h3 className='pt-8 pb-2 text-lg font-medium '>BackEnd</h3>
           <p className='py-2'>
