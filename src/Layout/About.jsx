@@ -4,7 +4,7 @@ import { BsServer, BsFillPaletteFill } from 'react-icons/bs'
 
 const About = () => {
   return (
-    <section className='flex flex-col px-10 items-center justify-center gap-20  '>
+    <section className='flex flex-col items-center justify-center gap-20 px-10  '>
       <section className='flex flex-col items-start justify-center text-left '>
         <h2 className='text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
           Servicios que ofrezco
@@ -17,9 +17,6 @@ const About = () => {
           <span className='text-teal-500'> FrontEnd </span> y
           <span className='text-teal-500'> BackEnd </span>, con el objetivo de brindar soluciones
           innovadoras y eficientes a mis clientes.
-        </p>
-        <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
-          I offer from a wide range of services, including brand design, programming and teaching.
         </p>
       </section>
       <section className='grid  grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10  '>
