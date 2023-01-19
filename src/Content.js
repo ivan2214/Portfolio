@@ -18,6 +18,11 @@ import iconTailwindCSS from '@/Assets/icons/tailwindcss/tailwindcss-plain.svg'
 import iconWordpess from '@/Assets/icons/wordpress/wordpress-plain.svg'
 import iconNpm from '@/Assets/icons/npm/npm-original-wordmark.svg'
 import iconNodeJs from '@/Assets/icons/nodejs/nodejs-original.svg'
+import iconExpress from '@/Assets/icons/express/express-original.svg'
+import iconGraphql from '@/Assets/icons/graphql/graphql-plain.svg'
+import iconMongoDB from '@/Assets/icons/mongodb/mongodb-original.svg'
+import iconPosgreSQL from '@/Assets/icons/postgresql/postgresql-original.svg'
+import iconSequelize from '@/Assets/icons/sequelize/sequelize-original.svg'
 import iconGit from '@/Assets/icons/git/git-original.svg'
 import iconGitHub from '@/Assets/icons/github/github-original.svg'
 import iconFigma from '@/Assets/icons/figma/figma-original.svg'
@@ -73,6 +78,19 @@ export const content = {
         github: 'https://github.com/ivan2214/Todo-List',
         deploy: 'https://tareas-ivan.netlify.app',
       },
+    ],
+    skills: [
+      { name: 'react', img: iconReact },
+      { name: 'Redux', img: iconRedux },
+      { name: 'Express', img: iconExpress },
+      { name: 'NodeJs', img: iconNodeJs },
+      { name: 'MongoDB', img: iconMongoDB },
+      { name: 'Graphql', img: iconGraphql },
+      { name: 'posgreSQL', img: iconPosgreSQL },
+      { name: 'sequelize', img: iconSequelize },
+      { name: 'css', img: iconCss },
+      { name: 'vite', img: iconVite },
+      { name: 'tailwindCSS', img: iconTailwindCSS },
     ],
   },
 }

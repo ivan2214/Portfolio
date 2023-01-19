@@ -4,6 +4,7 @@ import Header from '@/Layout/Header'
 import Hero from '@/Layout/Hero'
 import Projects from '@/Layout/Projects'
 import Footer from '@/Layout/Footer'
+import Skills from './Layout/Skills'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </main>
