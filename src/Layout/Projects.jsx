@@ -41,11 +41,11 @@ const Projects = () => {
                dark:text-gray-300 md:flex-row lg:p-8
                 ${activeIndex !== i && 'translate-y-16 scale-75 blur-sm'}`}
               >
-                <div className='flex h-full flex-col  items-center justify-center gap-10 '>
+                <div className='mx-auto flex h-full  flex-col items-center justify-center gap-10 '>
                   <img
                     src={content?.img}
                     alt='...'
-                    className='w-full  object-contain md:aspect-[16/18]  md:rounded-2xl lg:aspect-[16/10] lg:rounded-2xl 2xl:max-h-[500px]'
+                    className='mx-auto aspect-[16/6]  w-full object-contain md:aspect-[16/8]  md:rounded-2xl lg:aspect-[16/10] lg:rounded-2xl 2xl:max-h-[500px]'
                   />
                   <div className='flex flex-row items-center justify-center gap-5'>
                     <a

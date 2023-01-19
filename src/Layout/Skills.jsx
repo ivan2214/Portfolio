@@ -45,7 +45,7 @@ const Skills = () => {
                   <img
                     src={content?.img}
                     alt='...'
-                    className='aspect-[16/6] w-full  object-contain md:aspect-[16/18]  md:rounded-2xl lg:aspect-[16/4] lg:rounded-2xl 2xl:max-h-[30px]'
+                    className='aspect-[16/6] w-full  object-contain md:aspect-[16/8]  md:rounded-2xl lg:aspect-[16/4] lg:rounded-2xl 2xl:max-h-[30px]'
                   />
                 </div>
                 <div className='flex flex-col items-start justify-center gap-5 p-5 text-left '>
