@@ -45,7 +45,7 @@ const Projects = () => {
                   <img
                     src={content?.img}
                     alt='...'
-                    className='w-full  object-contain md:aspect-[16/18]  md:rounded-2xl lg:aspect-[16/6] lg:rounded-2xl 2xl:max-h-[500px]'
+                    className='w-full  object-contain md:aspect-[16/18]  md:rounded-2xl lg:aspect-[16/10] lg:rounded-2xl 2xl:max-h-[500px]'
                   />
                   <div className='flex flex-row items-center justify-center gap-5'>
                     <a
