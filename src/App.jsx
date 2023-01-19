@@ -5,16 +5,18 @@ import Hero from '@/Layout/Hero'
 import Projects from '@/Layout/Projects'
 import Footer from '@/Layout/Footer'
 import Skills from './Layout/Skills'
+import UpArrow from './Components/UpArrow'
 
 function App() {
   return (
-    <main className='flex min-h-screen w-full  flex-col  items-center overflow-hidden  bg-white transition-all duration-500 dark:bg-slate-900 md:px-20 lg:px-40'>
+    <main className='flex min-h-screen w-full relative  flex-col  items-center overflow-hidden  bg-white transition-all duration-500 dark:bg-slate-900 md:px-20 lg:px-40'>
       <Header />
       <Hero />
       <About />
       <Projects />
       <Skills />
       <Contact />
+      <UpArrow />
       <Footer />
     </main>
   )
