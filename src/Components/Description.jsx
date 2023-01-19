@@ -11,8 +11,7 @@ const Description = () => {
       </h2>
       <h3 className=' text-2xl dark:text-white md:text-3xl'>Full Stack Developer.</h3>
       <p className='mx-auto max-w-xl px-5 text-sm font-light leading-8 text-gray-800 dark:text-gray-200 md:text-xl'>
-        Freelancer providing services for programming and design content needs. Join me down below
-        and let's get cracking!
+        Un Dev amante del Rocket League y curioso por el espacio 🚀🚗
       </p>
       <div className='flex items-center justify-center gap-16  '>
         <a
