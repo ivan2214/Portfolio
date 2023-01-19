@@ -1,17 +1,12 @@
 // import images
 
+import candyShop from '@/Assets/Projects/candyShop.png'
+import pokemon from '@/Assets/Projects/pokemon.png'
+import chatBot from '@/Assets/Projects/chatBot.png'
 import peliculas from '@/Assets/Projects/peliculas.png'
 import todolist from '@/Assets/Projects/todolist.png'
-import spaceX from '@/Assets/Projects/spaceX.png'
-/* import react from '@/Assets/skills/react.png'
-import redux from '@/Assets/skills/redux.png'
-import chakra from '@/Assets/skills/chakra.png'
-import tailwind from '@/Assets/skills/tailwind.png'
-import express from '@/Assets/skills/express.png'
-import mongo from '@/Assets/skills/mongo.png'
-import postgre from '@/Assets/skills/postgre.png'
-import mongoose from '@/Assets/skills/mongoose.png'
-import sequlize from '@/Assets/skills/sequlize.png' */
+
+/* icons */
 import iconHtml from '@/Assets/icons/html5/html5-original.svg'
 import iconCss from '@/Assets/icons/css3/css3-original.svg'
 import iconJs from '@/Assets/icons/javascript/javascript-original.svg'
@@ -34,25 +29,49 @@ export const content = {
     subtitle: 'MY CLIENT REVIEWS',
     testimonials_content: [
       {
+        title: 'CandyShop Ecommerce',
+        review:
+          'Ecommerce Realizado en conjunto con un equipo de devs en henry. Cuenta con funcionalidades de autenticacion, pasarela de pagos, panel de admin, etc',
+        img: candyShop,
+        tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
+        github: 'https://github.com/AntonelaRodriguez/CandyShop',
+        deploy: 'https://candy-shop-sage.vercel.app',
+      },
+      {
+        title: 'Crud Pokemon',
+        review:
+          'Aplicacion fullStack capaz de realizar un CRUD completo, filtros de busqueda y ordenamiento. Proyecto individual realizado con express, posgreSQL, sequelize, React, Redux ',
+        img: pokemon,
+        tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
+        github: 'https://github.com/AntonelaRodriguez/CandyShop',
+        deploy: 'https://candy-shop-sage.vercel.app',
+      },
+      {
+        title: 'ChatBot Simple',
+        review:
+          'Chat bot simple capaz de reconocer frases de un usuario tipico para atencion al cliente. Fue realizado con Natural para su entrenamiento. Esta realizado en React y Express  ',
+        img: chatBot,
+        tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
+        github: 'https://github.com/ivan2214/ChatBot-Front',
+        deploy: 'https://chat-bot-front.vercel.app',
+      },
+      {
         title: 'App De Peliculas',
         review:
-          '“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra,”',
+          'Aplicacion de peliculas capaz de hacer match por nombre de pelicula. Cuenta con paginado simple. Realizada en React y Chakra',
         img: peliculas,
-        tecnology: [iconReact,iconReact,iconReact,iconReact,iconRedux,iconRedux,iconRedux],
+        tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
+        github: 'https://github.com/ivan2214/App-De-Pelis',
+        deploy: 'https://app-de-pelis.netlify.app',
       },
       {
         title: 'Lista de tareas',
         review:
-          '“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”',
+          'Lista de tareas Capaz de persistir en LocalStorage, tachado de tareas realizadas y elimnacion de las mismas. Realizada en React',
         img: todolist,
-          tecnology: [iconReact,iconReact,iconReact,iconReact,iconRedux,iconRedux,iconRedux],
-      },
-      {
-        title: 'SpaceX',
-        review:
-          '“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”',
-        img: spaceX,
-        tecnology: [iconReact,iconReact,iconReact,iconReact,iconRedux,iconRedux,iconRedux],
+        tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
+        github: 'https://github.com/ivan2214/Todo-List',
+        deploy: 'https://tareas-ivan.netlify.app',
       },
     ],
   },

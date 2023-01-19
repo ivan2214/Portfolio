@@ -43,20 +43,20 @@ const Projects = () => {
               >
                 <div className='flex h-full flex-col  items-center justify-center gap-10 '>
                   <img
-                    src={content.img}
+                    src={content?.img}
                     alt='...'
-                    className='aspect-[16/13] w-full object-cover md:aspect-[16/18] md:cursor-pointer md:rounded-2xl lg:aspect-[16/6] 2xl:max-h-[500px]'
+                    className='w-full  object-contain md:aspect-[16/18]  md:rounded-2xl lg:aspect-[16/6] lg:rounded-2xl 2xl:max-h-[500px]'
                   />
                   <div className='flex flex-row items-center justify-center gap-5'>
                     <a
-                      href='https://github.com/ivan2214'
+                      href={content?.github}
                       target='_blank'
                       className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
                     >
                       <AiFillGithub className='h-7 w-7' />
                     </a>
                     <a
-                      href='https://github.com/ivan2214'
+                      href={content?.deploy}
                       target='_blank'
                       className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
                     >
