@@ -2,7 +2,6 @@ import { content } from '../Content'
 
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
-import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 
 const Skills = () => {
   const [activeFilter, setActiveFilter] = useState('Front End')
@@ -36,7 +35,7 @@ const Skills = () => {
       <h2 className='px-10 text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
         Skills
       </h2>
-      <section className='mx-auto py-5 flex w-full gap-5 px-6 text-white'>
+      <section className='mx-auto flex w-full gap-5 py-5 px-6 text-white'>
         {['Front End', 'Back End'].map((item, idx) => (
           <div
             key={idx}
@@ -57,7 +56,7 @@ const Skills = () => {
       >
         {filterWork.map((s, idx) => (
           <motion.div
-            transition={{ duration: 1.5, delayChildren: idx*0.5 }}
+            transition={{ duration: 1.5, delayChildren: idx * 0.5 }}
             className={'flex w-full items-center justify-center gap-5 rounded-lg bg-slate-700'}
           >
             <img src={s.img} className='max-h-[50px] max-w-xs' alt='' />
