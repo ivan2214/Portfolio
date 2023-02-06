@@ -1,5 +1,6 @@
 // import images
 
+import ecommerceStrapi from '@/Assets/Projects/ecommerceStrapi.png'
 import candyShop from '@/Assets/Projects/candyShop.png'
 import pokemon from '@/Assets/Projects/pokemon.png'
 import chatBot from '@/Assets/Projects/chatBot.png'
@@ -34,6 +35,15 @@ export const content = {
     subtitle: 'MY CLIENT REVIEWS',
     testimonials_content: [
       {
+        title: 'Ecommerce Tech',
+        review:
+          'Ecommerce Creado Con Strapi,React,TailwindCSS donde al finalizar la compra lo redirije a WhatsApp para terminar el pago',
+        img: ecommerceStrapi,
+        tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
+        github: 'https://github.com/ivan2214/EcommerceFront',
+        deploy: 'https://ecommerce-front-mu.vercel.app',
+      },
+      {
         title: 'CandyShop Ecommerce',
         review:
           'Ecommerce Realizado en conjunto con un equipo de devs en henry. Cuenta con funcionalidades de autenticacion, pasarela de pagos, panel de admin, etc',
@@ -48,7 +58,7 @@ export const content = {
           'Aplicacion fullStack capaz de realizar un CRUD completo, filtros de busqueda y ordenamiento. Proyecto individual realizado con express, posgreSQL, sequelize, React, Redux ',
         img: pokemon,
         tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
-        github: 'https://github.com/AntonelaRodriguez/CandyShop',
+        github: 'https://github.com/ivan2214/Pokemon-FullStack',
         deploy: 'https://candy-shop-sage.vercel.app',
       },
       {

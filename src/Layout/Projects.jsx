@@ -36,37 +36,45 @@ const Projects = () => {
           {Testimonials?.testimonials_content?.map((content, i) => (
             <SwiperSlide key={i}>
               <div
-                className={`flex h-full w-full flex-col items-center justify-center gap-6 overflow-hidden
+                className={`flex h-full w-full flex-col items-center justify-center overflow-hidden
               rounded-2xl  bg-teal-700 text-gray-200 duration-500 dark:bg-gray-800
-               dark:text-gray-300 md:flex-row lg:p-8
+               dark:text-gray-300 
                 ${activeIndex !== i && 'translate-y-16 scale-75 blur-sm'}`}
               >
-                <div className='mx-auto flex h-full  flex-col items-center justify-center gap-10 '>
-                  <img
-                    src={content?.img}
-                    alt='...'
-                    className='mx-auto aspect-[16/6]  w-full object-contain md:aspect-[16/8]  md:rounded-2xl lg:aspect-[16/10] lg:rounded-2xl 2xl:max-h-[500px]'
-                  />
-                  <div className='flex flex-row items-center justify-center gap-5'>
-                    <a
-                      href={content?.github}
-                      target='_blank'
-                      className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
-                    >
-                      <AiFillGithub className='h-7 w-7' />
-                    </a>
-                    <a
-                      href={content?.deploy}
-                      target='_blank'
-                      className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
-                    >
-                      <TfiWorld className='h-7 w-7' />
-                    </a>
+                <div className='600 flex h-full  w-full flex-col items-center  rounded-2xl  lg:flex-row lg:gap-10 lg:px-5'>
+                  {/* image and links */}
+                  <div className='mx lg h-full   w-full rounded-2xl '>
+                    <img
+                      src={content?.img}
+                      alt='...'
+                      className='mx-auto h-full  w-full min-w-[208px]  object-contain md:rounded-2xl  lg:rounded-2xl 2xl:max-h-[500px]'
+                    />
                   </div>
-                </div>
-                <div className='flex flex-col items-start justify-center gap-5 p-5 text-left '>
-                  <h2 className='text-xl font-bold lg:text-2xl'>{content.title}</h2>
-                  <p className='text-sm font-light lg:text-base '>{content.review}</p>
+                  {/* content */}
+                  <div className=' flex flex-col items-center gap-5 py-5'>
+                    <div className='flex flex-col items-start justify-center gap-5 p-5 text-left '>
+                      <h2 className='text-xl font-bold lg:text-2xl'>{content.title}</h2>
+                      <p className='text-sm font-light lg:text-base '>{content.review}</p>
+                    </div>
+                    <div className='mx-auto flex h-full w-full flex-col  items-center justify-center gap-10 '>
+                      <div className='flex flex-row items-center justify-center gap-5 pb-5 lg:pb-10'>
+                        <a
+                          href={content?.github}
+                          target='_blank'
+                          className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
+                        >
+                          <AiFillGithub className='h-7 w-7' />
+                        </a>
+                        <a
+                          href={content?.deploy}
+                          target='_blank'
+                          className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
+                        >
+                          <TfiWorld className='h-7 w-7' />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
