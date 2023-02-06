@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiFillLinkedin, AiOutlineWhatsApp, AiFillGithub } from 'react-icons/ai'
 import { SiGmail } from 'react-icons/si'
 
 const Contact = () => {
+  const [input, setInput] = useState({
+    name: '',
+    email: '',
+    description: '',
+  })
+
+  const handleChange = (target) => {
+    setInput({ ...input, [target.name]: target.value })
+  }
+
+  const condition = input?.description?.length >= 100 || input?.name?.length >= 50
+
   return (
     <section className='mt-16 flex h-full w-full flex-col  items-start justify-center gap-2'>
       <h2 className='px-10 text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
@@ -13,25 +25,44 @@ const Contact = () => {
           <form>
             <section className=' flex flex-col items-start justify-center gap-5'>
               <input
-                className=' w-full rounded-md border  bg-gray-800 p-3 text-gray-300 placeholder:text-gray-100 focus:border-teal-500  '
+                onChange={(e) => handleChange(e.target)}
+                className={` w-full  rounded-md border border-white  bg-gray-800 p-3 text-gray-300 transition-all duration-500 placeholder:text-gray-100 focus:border-teal-500 ${
+                  condition && 'bg-red-500'
+                } `}
                 type='text'
+                name='name'
                 placeholder='Nombre'
               />
               <input
-                className=' w-full rounded-md border  bg-gray-800 p-3 text-gray-300 placeholder:text-gray-100 focus:border-teal-500  '
+                onChange={(e) => handleChange(e.target)}
+                className={` w-full  rounded-md border  bg-gray-800 p-3 text-gray-300 transition-all duration-500 placeholder:text-gray-100 focus:border-teal-500 ${
+                  condition && 'bg-red-500'
+                } `}
                 type='email'
+                name='email'
                 placeholder='Email'
               />
               <textarea
-                className=' w-full resize-none rounded-md border   bg-gray-800 p-5 text-gray-300 placeholder:text-gray-100 focus:border-teal-500  '
-                name=''
+                onChange={(e) => handleChange(e.target)}
+                className={` w-full  resize-none rounded-md border   bg-gray-800 p-5 text-gray-300 transition-all duration-500  placeholder:text-gray-100 focus:border-teal-500 ${
+                  condition && 'bg-red-500'
+                } `}
+                name='description'
                 draggable='false'
                 resize='false'
                 placeholder='Mensaje'
                 id=''
-                cols='10'
-                rows='10'
+                cols='2'
+                rows='2'
               ></textarea>
+              <button
+                disabled={condition}
+                className={
+                  '${condition && "bg-red-500"} = w-52 resize-none rounded-full border bg-gray-800   p-5 px-8 py-2 text-gray-300 transition-all duration-500 placeholder:text-gray-100 hover:bg-gray-600 focus:border-teal-500 '
+                }
+              >
+                Enviar
+              </button>
             </section>
           </form>
         </section>

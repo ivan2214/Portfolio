@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaServer } from 'react-icons/fa'
 import { BsServer, BsFillPaletteFill } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
@@ -20,7 +21,13 @@ const About = () => {
         </p>
       </section>
       <section className='grid  grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10  '>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200'>
+        <motion.article
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200'
+        >
           <BsFillPaletteFill className='mx-auto h-10 w-10' />
 
           <h3 className='pt-8 pb-2 text-lg font-medium '>FrontEnd</h3>
@@ -29,8 +36,14 @@ const About = () => {
             atractivas y fáciles de usar que se adapten a las necesidades específicas de cada
             proyecto.
           </p>
-        </article>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200 lg:mt-24'>
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200 lg:mt-24'
+        >
           <FaServer className='mx-auto h-10 w-10' />
           <h3 className='pt-8 pb-2 text-lg font-medium '>BackEnd</h3>
           <p className='py-2'>
@@ -39,8 +52,14 @@ const About = () => {
             seguridad y estabilidad de las aplicaciones. Utilizo las últimas tecnologías y
             herramientas para ofrecer soluciones de alta calidad.
           </p>
-        </article>
-        <article className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200'>
+        </motion.article>
+        <motion.article
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className='flex max-h-[470px] flex-col rounded-xl bg-teal-600 p-8 text-center text-white shadow-lg dark:bg-gray-800 dark:text-gray-200'
+        >
           <BsServer className='mx-auto h-10 w-10' />
           <h3 className='pt-8 pb-2 text-lg font-medium '>Base de Datos</h3>
           <p className='py-2'>
@@ -49,7 +68,7 @@ const About = () => {
             Mongoose con MongoDB, para definir esquemas de datos. Sequelize, para bases de datos
             relacionales, creacion de tablas relacciones y modelos
           </p>
-        </article>
+        </motion.article>
       </section>
     </section>
   )
