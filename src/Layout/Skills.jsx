@@ -56,6 +56,7 @@ const Skills = () => {
       >
         {filterWork.map((s, idx) => (
           <motion.div
+            key={idx}
             transition={{ duration: 1.5, delayChildren: idx * 0.5 }}
             className={'flex w-full items-center justify-center gap-5 rounded-lg bg-slate-700'}
           >

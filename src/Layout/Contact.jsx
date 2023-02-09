@@ -73,7 +73,9 @@ const Contact = () => {
             className='flex flex-row items-center justify-center gap-5 p-5'
           >
             <AiFillGithub className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl text-gray-300 hover:dark:text-teal-600'>ivan2214</p>
+            <p className='text-xl  capitalize dark:text-gray-300 hover:dark:text-teal-600'>
+              ivan2214
+            </p>
           </a>
           <a
             href='https://www.linkedin.com/in/bongiovanni-ivan45'
@@ -81,14 +83,16 @@ const Contact = () => {
             className='flex flex-row items-center justify-center gap-5 p-5'
           >
             <AiFillLinkedin className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl text-gray-300 hover:dark:text-teal-600'>LinkedIn</p>
+            <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>LinkedIn</p>
           </a>
           <a
             href='https://walink.co/74213e'
             className='flex flex-row items-center justify-center gap-5 p-5'
           >
             <AiOutlineWhatsApp className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl text-gray-300 hover:dark:text-teal-600'>+54 3812516597</p>
+            <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>
+              +54 3812516597
+            </p>
           </a>
           <a
             href='mailto:bongiovanniivan12@gmail.com?Subject=Me%20contacto%20por%20medio%20tu%20portafolio%20y%20quisiera%20poder%20establecer%20una%20charla%20contigo'
@@ -96,7 +100,7 @@ const Contact = () => {
             className='flex flex-row items-center justify-center gap-5 p-5'
           >
             <SiGmail className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl text-gray-300 hover:dark:text-teal-600'>Email</p>
+            <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>Email</p>
           </a>
         </section>
       </section>

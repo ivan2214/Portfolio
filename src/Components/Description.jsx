@@ -2,6 +2,8 @@ import React from 'react'
 
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import { SiGmail } from 'react-icons/si'
+import { IoMdRocket } from 'react-icons/io'
+import { motion } from 'framer-motion'
 
 const Description = () => {
   return (
@@ -10,8 +12,21 @@ const Description = () => {
         Ivan Bongiovanni
       </h2>
       <h3 className=' text-2xl dark:text-white md:text-3xl'>Full Stack Developer.</h3>
-      <p className='mx-auto max-w-xl px-5 text-sm font-light leading-8 text-gray-800 dark:text-gray-200 md:text-xl'>
-        Un Dev amante del Rocket League y curioso por el espacio 🚀🚗
+      <p className='mx-auto flex max-w-xl items-center gap-2 px-5 text-sm font-light leading-8 text-gray-800 dark:text-gray-200 md:text-xl'>
+        Un Dev amante del Rocket League y curioso por el espacio
+        <motion.span
+          animate={{
+            scale: [1, 1.5, 1.5, 1, 1],
+            rotate: [0, 45, -45, 0, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatDelay: 2,
+          }}
+        >
+          <IoMdRocket size={40} />
+        </motion.span>
       </p>
       <div className='flex items-center justify-center gap-16  '>
         <a

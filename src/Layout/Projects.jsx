@@ -37,13 +37,13 @@ const Projects = () => {
             <SwiperSlide key={i}>
               <div
                 className={`flex h-full w-full flex-col items-center justify-center overflow-hidden
-              rounded-2xl  bg-teal-700 text-gray-200 duration-500 dark:bg-gray-800
+              rounded-2xl  bg-teal-600 text-gray-200 duration-500 dark:bg-gray-800
                dark:text-gray-300 
                 ${activeIndex !== i && 'translate-y-16 scale-75 blur-sm'}`}
               >
-                <div className='600 flex h-full  w-full flex-col items-center  rounded-2xl  lg:flex-row lg:gap-10 lg:px-5'>
+                <div className=' flex h-full  w-full flex-col items-center  rounded-2xl  lg:flex-row lg:gap-10 lg:px-5'>
                   {/* image and links */}
-                  <div className='mx lg h-full   w-full rounded-2xl '>
+                  <div className='mx  h-full   w-full rounded-2xl '>
                     <img
                       src={content?.img}
                       alt='...'
@@ -61,14 +61,14 @@ const Projects = () => {
                         <a
                           href={content?.github}
                           target='_blank'
-                          className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
+                          className='text-gray-100 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
                         >
                           <AiFillGithub className='h-7 w-7' />
                         </a>
                         <a
                           href={content?.deploy}
                           target='_blank'
-                          className='text-gray-600 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
+                          className='text-gray-100 hover:text-teal-400 dark:text-gray-400 dark:hover:text-teal-400'
                         >
                           <TfiWorld className='h-7 w-7' />
                         </a>

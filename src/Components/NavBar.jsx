@@ -1,25 +1,10 @@
 import React from 'react'
 import { DarkMode } from '@/Utils/DarkMode'
 import { FiCode } from 'react-icons/fi'
-import cv from '@/Assets/Bongiovanni Ivan Cv.pdf'
+import cv from '@/Assets/Bongiovanni Ivan CV Full Stack.pdf'
 import { motion } from 'framer-motion'
 
 const NavBar = () => {
-  const links = [
-    {
-      href: '#sobremi',
-      tittle: 'Sobre Mi',
-    },
-    {
-      href: '#proyectos',
-      tittle: 'Proyectos',
-    },
-    {
-      href: '#contacto',
-      tittle: 'Contacto',
-    },
-  ]
-
   const list = {
     visible: {
       opacity: 1,
@@ -54,20 +39,20 @@ const NavBar = () => {
           className={'rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 text-white'}
         >
           <a
-            className=' rounded-2xl border-none bg-gradient-to-r from-cyan-500 to-teal-500  text-center flex items-center  text-gray-300 dark:text-gray-900'
+            className=' flex items-center rounded-2xl border-none bg-gradient-to-r  from-cyan-500 to-teal-500 text-center  text-gray-300 dark:text-gray-900'
             href='#'
           >
             <FiCode size={30} />
           </a>
         </motion.li>
-        <div  className='flex items-center justify-center gap-5'>
+        <div className='flex items-center justify-center gap-5'>
           <motion.li
             variants={item}
             className={
               'text ml-8 rounded-md border-none bg-gradient-to-r from-cyan-500 to-teal-500 px-4 py-2 text-white'
             }
           >
-            <a href={cv} download='CV IvanBongiovanni'>
+            <a href={cv} download='CV Full Stack Bongiovanni Ivan '>
               Curriculum
             </a>
           </motion.li>
