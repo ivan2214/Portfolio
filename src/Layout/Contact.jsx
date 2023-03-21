@@ -21,7 +21,7 @@ const Contact = () => {
         Contactemos!
       </h2>
 
-      <section className='flex items-start justify-center gap-10  p-10 '>
+      <section className='flex flex-col gap-1 md:flex-row items-start justify-center md:gap-10  p-10 '>
         <a
           href='https://github.com/ivan2214'
           target='_blank'
