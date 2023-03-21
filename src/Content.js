@@ -37,7 +37,7 @@ export const content = {
       {
         title: 'Ecommerce Tech',
         review:
-          'Ecommerce Creado Con Strapi,React,TailwindCSS donde al finalizar la compra lo redirije a WhatsApp para terminar el pago',
+          'Se trata de una tienda en línea para la venta de componentes de PC. Implementé filtros, búsquedas y ordenamientos con la base de datos de Strapi para hacer todo más sencillo. Utilicé tecnologías como React, Redux-toolkit, TailwindCSS, Framer Motion, Strapi, Express y Redux-persist para almacenar en caché la información y no hacer peticiones de datos innecesarias.',
         img: ecommerceStrapi,
         tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
         github: 'https://github.com/ivan2214/EcommerceFront',
@@ -46,7 +46,7 @@ export const content = {
       {
         title: 'CandyShop Ecommerce',
         review:
-          'Ecommerce Realizado en conjunto con un equipo de devs en henry. Cuenta con funcionalidades de autenticacion, pasarela de pagos, panel de admin, etc',
+          'Un proyecto grupal enfocado en vender al por mayor, que incluyó la autenticación de usuario, filtros combinados, dashboard de administrador, notificaciones por mail, carga de productos, reviews, chatBot, entre otros requerimientos técnicos.',
         img: candyShop,
         tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
         github: 'https://github.com/AntonelaRodriguez/CandyShop',
@@ -55,7 +55,7 @@ export const content = {
       {
         title: 'Crud Pokemon',
         review:
-          'Aplicacion fullStack capaz de realizar un CRUD completo, filtros de busqueda y ordenamiento. Proyecto individual realizado con express, posgreSQL, sequelize, React, Redux ',
+          'Un proyecto individual donde se puede buscar información sobre pokemones de la serie animada "Pokemon", la app cuenta con operaciones CRUD completas y filtros combinados.',
         img: pokemon,
         tecnology: [iconReact, iconReact, iconReact, iconReact, iconRedux, iconRedux, iconRedux],
         github: 'https://github.com/ivan2214/Pokemon-FullStack',

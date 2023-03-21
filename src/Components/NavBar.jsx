@@ -1,7 +1,7 @@
 import React from 'react'
 import { DarkMode } from '@/Utils/DarkMode'
 import { FiCode } from 'react-icons/fi'
-import cv from '@/Assets/Bongiovanni Ivan CV Full Stack.pdf'
+import cv from '@/Assets/CV-Ivan-Bongiovanni.pdf'
 import { motion } from 'framer-motion'
 
 const NavBar = () => {

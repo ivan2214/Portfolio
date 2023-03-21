@@ -20,89 +20,43 @@ const Contact = () => {
       <h2 className='px-10 text-left text-5xl font-medium text-teal-600 dark:text-teal-400 md:text-6xl'>
         Contactemos!
       </h2>
-      <section className='flex h-full w-full flex-col-reverse flex-wrap justify-center  lg:flex-row lg:gap-5'>
-        <section className='w-full rounded-2xl p-10 lg:w-[50%]'>
-          <form>
-            <section className=' flex flex-col items-start justify-center gap-5'>
-              <input
-                onChange={(e) => handleChange(e.target)}
-                className={` w-full  rounded-md border border-white  bg-gray-800 p-3 text-gray-300 transition-all duration-500 placeholder:text-gray-100 focus:border-teal-500 ${
-                  condition && 'bg-red-500'
-                } `}
-                type='text'
-                name='name'
-                placeholder='Nombre'
-              />
-              <input
-                onChange={(e) => handleChange(e.target)}
-                className={` w-full  rounded-md border  bg-gray-800 p-3 text-gray-300 transition-all duration-500 placeholder:text-gray-100 focus:border-teal-500 ${
-                  condition && 'bg-red-500'
-                } `}
-                type='email'
-                name='email'
-                placeholder='Email'
-              />
-              <textarea
-                onChange={(e) => handleChange(e.target)}
-                className={` w-full  resize-none rounded-md border   bg-gray-800 p-5 text-gray-300 transition-all duration-500  placeholder:text-gray-100 focus:border-teal-500 ${
-                  condition && 'bg-red-500'
-                } `}
-                name='description'
-                draggable='false'
-                resize='false'
-                placeholder='Mensaje'
-                id=''
-                cols='2'
-                rows='2'
-              ></textarea>
-              <button
-                disabled={condition}
-                className={
-                  '${condition && "bg-red-500"} = w-52 resize-none rounded-full border bg-gray-800   p-5 px-8 py-2 text-gray-300 transition-all duration-500 placeholder:text-gray-100 hover:bg-gray-600 focus:border-teal-500 '
-                }
-              >
-                Enviar
-              </button>
-            </section>
-          </form>
-        </section>
-        <section className='flex  flex-col items-start justify-center gap-10  p-10 '>
-          <a
-            href='https://github.com/ivan2214'
-            target='_blank'
-            className='flex flex-row items-center justify-center gap-5 p-5'
-          >
-            <AiFillGithub className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl  capitalize dark:text-gray-300 hover:dark:text-teal-600'>
-              ivan2214
-            </p>
-          </a>
-          <a
-            href='https://www.linkedin.com/in/bongiovanni-ivan45'
-            target='_blank'
-            className='flex flex-row items-center justify-center gap-5 p-5'
-          >
-            <AiFillLinkedin className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>LinkedIn</p>
-          </a>
-          <a
-            href='https://walink.co/74213e'
-            className='flex flex-row items-center justify-center gap-5 p-5'
-          >
-            <AiOutlineWhatsApp className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>
-              +54 3812516597
-            </p>
-          </a>
-          <a
-            href='mailto:bongiovanniivan12@gmail.com?Subject=Me%20contacto%20por%20medio%20tu%20portafolio%20y%20quisiera%20poder%20establecer%20una%20charla%20contigo'
-            target='_blank'
-            className='flex flex-row items-center justify-center gap-5 p-5'
-          >
-            <SiGmail className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
-            <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>Email</p>
-          </a>
-        </section>
+
+      <section className='flex items-start justify-center gap-10  p-10 '>
+        <a
+          href='https://github.com/ivan2214'
+          target='_blank'
+          className='flex flex-row items-center justify-center gap-5 p-5'
+        >
+          <AiFillGithub className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
+          <p className='text-xl  capitalize dark:text-gray-300 hover:dark:text-teal-600'>
+            ivan2214
+          </p>
+        </a>
+        <a
+          href='https://www.linkedin.com/in/bongiovanni-ivan45'
+          target='_blank'
+          className='flex flex-row items-center justify-center gap-5 p-5'
+        >
+          <AiFillLinkedin className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
+          <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>LinkedIn</p>
+        </a>
+        <a
+          href='https://walink.co/74213e'
+          className='flex flex-row items-center justify-center gap-5 p-5'
+        >
+          <AiOutlineWhatsApp className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
+          <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>
+            +54 3812516597
+          </p>
+        </a>
+        <a
+          href='mailto:bongiovanniivan12@gmail.com?Subject=Me%20contacto%20por%20medio%20tu%20portafolio%20y%20quisiera%20poder%20establecer%20una%20charla%20contigo'
+          target='_blank'
+          className='flex flex-row items-center justify-center gap-5 p-5'
+        >
+          <SiGmail className='h-10 w-10 cursor-pointer rounded-2xl shadow-xl transition-all  duration-300 dark:text-gray-300 hover:dark:text-teal-600' />
+          <p className='text-xl capitalize dark:text-white hover:dark:text-teal-600'>Email</p>
+        </a>
       </section>
     </section>
   )
