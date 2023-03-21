@@ -9,7 +9,7 @@ import UpArrow from './Components/UpArrow'
 
 function App() {
   return (
-    <main className=' flex min-h-screen w-full relative  flex-col  items-center overflow-hidden  bg-white transition-all duration-500 dark:bg-slate-900 md:px-20 lg:px-40'>
+    <main className='relative  mx-auto flex min-h-screen w-full max-w-screen-xl  flex-col   items-center overflow-hidden  bg-white transition-all duration-500 dark:bg-slate-900 md:px-20 lg:px-40'>
       <Header />
       <Hero />
       <About />

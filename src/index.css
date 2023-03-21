@@ -8,5 +8,13 @@ html {
 
 body {
   min-width: 100%;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
+}
+
+@layer base {
+  body {
+    @apply dark:bg-slate-900;
+  }
+
+  /* ... */
 }
